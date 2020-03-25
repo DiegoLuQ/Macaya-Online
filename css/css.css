@@ -1,0 +1,256 @@
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(34, 97, 22);
+}
+a:hover{
+    color: green;
+}
+.macaya-icons-container {
+    height: 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(to left, rgba(189, 235, 199, 0.685) 0%, rgba(27, 144, 52, 0.842) 100%);
+    box-shadow: 2px -7px 20px 12px #347022;
+    position: relative;
+    z-index: 1;
+}
+.macaya-icons-container img {
+    width: 100px;
+    
+}
+.macaya-icons-container .macaya-icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+}
+.macaya-icons a {
+    padding: 0 20px;
+}
+.macaya-icons-container .macaya-logo{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.main{
+    display: grid;
+}
+
+.macaya-virtual-online{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.macaya-virtual-online-container{
+    background-color: #e6e9ed;
+    padding: 0 50px 40px;
+
+}
+.macaya-virtual-online-container .macaya-video{
+    text-align: center;
+
+}
+.macaya-virtual-online-container .macaya-video video{
+   width: 250px;
+   height: 100%;
+}
+.macaya-virtual-title{
+    display: grid;
+    grid-column: 1 / 2 span;
+    justify-content: center;
+    font-size: 35px;
+    animation: neon-shadow .5s infinite alternate;
+}
+@keyframes neon-shadow {
+    0% {
+        text-shadow: 0 0 15px rgba(3, 183, 255, 0.2);
+    }
+
+    100% {
+        text-shadow: 0 0 15px rgba(18, 131, 52, 0.979);
+    }
+}
+
+.image-macaya-virtual img{
+    width: 90%;
+    animation: neonboxShadown 3s alternate infinite;
+}
+@keyframes neonboxShadown {
+    0% {
+        box-shadow: -5px 0 10px 0 rgba(18, 131, 52, 0.979);
+    }
+
+    33% {
+        box-shadow: 0 -5px 10px 0 rgba(18, 131, 52, 0.979);
+    }
+
+    66% {
+        box-shadow: 5px 0 10px 0 rgb(18, 131, 52, 0.979);
+    }
+
+    100% {
+        box-shadow: 0 5px 10px 0 rgba(18, 131, 52, 0.979);
+    }
+}
+.info-macaya-virtual .info-title{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+.info-macaya-virtual-info {
+    font-size: 25px;
+}
+
+.macaya-virtual-cursos{
+   display: grid;
+}
+.macaya-virtual-cursos h2{
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.cursos-macaya-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(auto,1024px);
+}
+.cursos-container-items{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(4,1fr);
+    margin: 20px 25px;
+    justify-items: center;
+    gap: 10px 10px;
+
+}
+.cursos-container-items .cursos{
+    height: 50px;
+    background-color: rgb(4, 156, 29);
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.cursos a{
+    color: white;
+    font-size: 30px;
+    height: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1195px) {
+    .macaya-virtual-title {
+        display: grid;
+        grid-column: 1;
+        justify-content: center;
+        font-size: 35px;
+    }
+    .macaya-virtual-online {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+    }
+    .image-macaya-virtual {
+        display: flex;
+        justify-content: center;
+    }
+    .image-macaya-virtual  img{
+        width: 80%;
+        height: 80%;
+    }
+    .cursos-container-items{
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: repeat(2,1fr);
+     
+        justify-content: center;
+        gap: 10px 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .macaya-virtual-title {
+        display: grid;
+        grid-column: 1;
+        justify-content: center;
+        font-size: 25px;
+        text-align: center;
+    }
+    .macaya-virtual-online {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 8fr;
+    }
+    .image-macaya-virtual {
+        display: flex;
+        justify-content: center;
+    }
+    .image-macaya-virtual  img{
+        width: 80%;
+    }
+    .cursos-container-items{
+        display: grid;
+        
+        grid-template-columns: repeat(1,1fr);
+     
+        justify-content: center;
+        gap: 10px 10px;
+    }
+    .info-macaya-virtual .info-title{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .cursos a{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .macaya-icons-container .macaya-icons{
+     display: flex;
+        justify-items: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .macaya-icons-container .macaya-logo{
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        
+    }
+    
+    .macaya-icons-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background: linear-gradient(to left, rgba(189, 235, 199, 0.685) 0%, rgba(27, 144, 52, 0.842) 100%);
+    box-shadow: 2px -7px 20px 12px #347022;
+    position: relative;
+    z-index: 1;
+    justify-items: center;
+    }
+    .macaya-icons a {
+        margin-top: 10px;
+        padding: 0 10px;
+    }
+
+    .cursos a{
+        font-size: 25px;
+    }
+
+}
