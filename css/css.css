@@ -48,19 +48,27 @@ a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    /* background: red; */
 }
 .macaya-virtual-online-container{
     background-color: #e6e9ed;
     padding: 0 50px 40px;
 
 }
-.macaya-virtual-online-container .macaya-video{
-    text-align: center;
 
+.macaya-virtual-online-container .video-macaya{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    
 }
-.macaya-virtual-online-container .macaya-video video{
-   width: 250px;
-   height: 100%;
+.macaya-virtual-online-container .macaya-video .contenedor-video{
+   height: auto;
+   width: inherit;
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 10px;
+    /* background: red; */
 }
 .macaya-virtual-title{
     display: grid;
@@ -133,7 +141,8 @@ a:hover{
 
 }
 .cursos-container-items .cursos{
-    height: 50px;
+    height: 80px;
+    text-align: center;
     background-color: rgb(4, 156, 29);
     width: 100%;
     display: grid;
@@ -142,7 +151,7 @@ a:hover{
 }
 .cursos a{
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     height: inherit;
     width: 100%;
     display: flex;
@@ -218,6 +227,7 @@ a:hover{
     .cursos a{
         font-size: 30px;
     }
+  
 }
 
 @media screen and (max-width: 425px) {
@@ -252,5 +262,5 @@ a:hover{
     .cursos a{
         font-size: 25px;
     }
-
+   
 }
