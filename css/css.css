@@ -115,9 +115,9 @@ a:hover{
     font-size: 35px;
 }
 .info-macaya-virtual-info {
-    font-size: 25px;
+    font-size: 55px;
+    text-align: center;
 }
-
 .macaya-virtual-cursos{
    display: grid;
 }
