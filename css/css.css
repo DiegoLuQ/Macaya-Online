@@ -227,7 +227,10 @@ a:hover{
     .cursos a{
         font-size: 30px;
     }
-  
+    .info-macaya-virtual-info {
+        font-size: 25px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -243,7 +246,10 @@ a:hover{
         margin-left: 0;
         
     }
-    
+    .info-macaya-virtual-info {
+        font-size: 15px;
+        text-align: center;
+    }
     .macaya-icons-container {
     height: auto;
     display: grid;
